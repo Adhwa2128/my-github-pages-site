@@ -1,0 +1,335 @@
+/* Apply Montserrat font to the entire body */
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar-brand{
+    font-weight: 650;
+    font-size: 46px;
+    color: #EB455F;
+}
+/* Optional: Define different font weights */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700; /* Bold headings */
+}
+
+p, li, a {
+    font-weight: 400; /* Regular weight for text */
+}
+
+strong {
+    font-weight: 500; /* Medium weight for emphasis */
+}
+
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .logo h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+}
+
+.header .nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header .nav-item {
+    margin-left: 20px;
+}
+
+.header .nav-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.header .nav-link:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.header .social-icons a {
+    margin-left: 15px;
+}
+
+.header .social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.hero {
+    padding: 100px 0;
+    background-color: #e9f5ff;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2B3467;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    color: #2B3467;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+.hero.btn:hover{
+    transform: scale(1,15);
+}
+.hero-img {
+    margin-top: 30px;
+}
+
+.hero-img img {
+    max-width: 75%;
+    height: auto;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+    .hero .row {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .hero-img {
+        margin-top: 20px;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1.1rem;
+    }
+}
+
+/* About Me Section */
+.about-me {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.about-me h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.about-me-photo {
+    width: 75%;
+    border-radius: 15px; /* Semi-rounded border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .about-me .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-me-photo {
+        margin-bottom: 20px;
+    }
+
+    .about-me h2 {
+        font-size: 2rem;
+    }
+
+    .about-me p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 150px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 5)), url('https://images.unsplash.com/photo-1534670007418-fbb7f6cf32c3?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    color: #fff;
+}
+
+.portfolio h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.portfolio p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.portfolio .btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.portfolio .btn:hover {
+    background-color: #0056b3;
+}
+
+.testimonial {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease-out, transform 0.6s ease-out;
+}
+
+.client{
+    text-align: center;
+}
+
+.testimonial.fade-up {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.testimonial-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Ensures all boxes are the same height */
+}
+.testimonial .profile {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial .profile-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.testimonial h5 {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.testimonial p.text-muted {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+.rating i {
+    font-size: 1.2rem;
+    color: #EB455F;
+}
+
+
+/* CTA Section */
+.cta {
+    padding: 100px 0;
+    background: linear-gradient(rgba(186, 215, 233), rgba(43, 52, 103)), url('https://plus.unsplash.com/premium_photo-1661304756738-c8fd686d1ffe?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.cta .btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.cta .btn:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    background-color: #f9f9f9;
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+.footer .social-icons {
+    display: flex;
+}
+
+.footer .social-icons a {
+    margin-left: 15px;
+}
+
+.footer .social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .hero .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .portfolio, .about-me, .testimonials, .cta {
+        padding: 60px 0;
+    }
+
+    .portfolio h2, .about-me h2, .testimonials h2, .cta h2 {
+        font-size: 1.5rem;
+    }
+}
